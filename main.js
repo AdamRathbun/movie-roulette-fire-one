@@ -1,8 +1,8 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const movie=document.querySelector('input').value
-    let rand=Math.floor(Math.rand()*6 +1)
+    const movie=document.querySelector('input').value.toLowerCase()
+    let rand=Math.floor(Math.random()*6 +1)
     try{
         const response= await fetch(`https://movie-fire-one.herokuapp.com/api/${movie}/${rand}`)
         const data= await response.json()
