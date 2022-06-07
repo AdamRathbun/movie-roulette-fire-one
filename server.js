@@ -1,5 +1,5 @@
 const express=require('express')
-const app=expres()
+const app=express()
 const PORT=6000
 const cors=require('cors')
 
