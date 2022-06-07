@@ -114,12 +114,13 @@ let romance = {
     }
 }
 
+
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname + 'index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/main.js', (req, res)=>{
-    res.sendFile(__dirname + 'main.js')
+    res.sendFile(__dirname + '/main.js')
 })
 
 app.get('/api/horror/:name', (req, res)=>{
