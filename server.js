@@ -128,17 +128,17 @@ app.get('/api/horror/:name', (req, res)=>{
 
 app.get('/api/comedy/:name', (req, res)=>{
     const movie=req.params.name
-    res.json(horror[movie])
+    res.json(comedy[movie])
 })
 
 app.get('/api/scifi/:name', (req, res)=>{
     const movie=req.params.name
-    res.json(horror[movie])
+    res.json(scifi[movie])
 })
 
 app.get('/api/romance/:name', (req, res)=>{
     const movie=req.params.name
-    res.json(horror[movie])
+    res.json(romance[movie])
 })
 
 

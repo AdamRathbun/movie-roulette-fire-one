@@ -2,7 +2,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
     const movie=document.querySelector('input').value.toLocaleLowerCase()
-    const rand=Math.floor(Math.rand()*6 +1)
+    let rand=Math.floor(Math.rand()*6 +1)
     try{
         const response= await fetch(`https://movie-roulette-fire-one.herokuapp.com/api/${movie}/${rand}`)
         const data= await response.json()
